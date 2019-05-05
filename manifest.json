@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "variax",
+    "version": "1.0",
+    "description": "WebPage_word_highlight",
+    "icons": {"32": "inu.png"},
+    "permissions": ["storage"],
+    "browser_action":{
+        "default_icon":"inu.png",
+        "default_title": "highlight",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+    "matches": ["http://*/*","https://*/*","file://*"],
+      "js":["jquery-3.4.1.min.js", "script.js"]
+        }],
+
+    "options_page": "options.html"
+}
