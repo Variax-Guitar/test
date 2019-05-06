@@ -1,13 +1,4 @@
-/*
-
-$(function() {
-    $('#nicorepo').find('a').css('color','red');
-    $('a').css('color','red');
-});
-
-*/
-
-$('.TweetTextSize').each(function(){
+$('span.st').each(function(){
 
     let txt = $(this).text();
         $(this).html(
